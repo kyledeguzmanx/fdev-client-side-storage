@@ -102,4 +102,9 @@ function setCookie(cname,cvalue,exdays) {
        let favoriteMusic = prompt("Enter favorite genre","");
        setCookie("faveGenre", favoriteMusic, 30);
     }
+
+    if(getCookie("age") != "")
+        alert("Your age is " + getCookie("age"));
+    if(getCookie("faveGenre") != "")
+        alert("Your faveGenre is " + getCookie("faveGenre"));
   })();
